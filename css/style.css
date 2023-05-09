@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#fullCover{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.blue{
+    background-color:  #0b95f5;
+}
+
+.white{
+    background-color:  #eeeeee;
+}
+
+.mainSide{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50vw;
+}
+.mainSide:nth-child(2){
+    clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.mainText{
+    text-align: center;
+    font-family: arial;
+    color: white;
+}
+.mainTitle{
+    font-size: 10vw;
+    padding-bottom: 3vh;
+}
+.mainSubtitle{
+    font-size: 2vw;
+}
