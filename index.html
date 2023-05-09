@@ -11,8 +11,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <!--add js-->
+  <script src="js/script.js"></script>
 </head>
-<body>
+<body onload="addMargins();">
     <div id="fullCover" class="blue">
         <div class="mainSide blue">
             <div class="upper">
@@ -20,7 +22,19 @@
                 <h2 class="mainText mainSubtitle">A fast way to send LinkedIn Messages</h2>
             </div>
         </div>
-        <div class="mainSide white">
+        <div class="mainSide white" id="rightSide">
+            <div class="mainRightElement">
+                <h1 class="mainInputText">Your Name: </h1>
+                <div class="mainInputBox"></div>
+            </div>
+            <div class="mainRightElement">
+                <h1 class="mainInputText">Recruiter Name: </h1>
+                <div class="mainInputBox"></div>
+            </div>
+            <div class="mainRightElement">
+                <h1 class="mainInputText">Position: </h1>
+                <div class="mainInputBox"></div>
+            </div>
         </div>
     </div>
 </body>

@@ -17,15 +17,20 @@
     background-color:  #eeeeee;
 }
 
+.hideMainSide{
+    flex-grow: 0.3;
+}
 .mainSide{
     flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 50vw;
 }
 .mainSide:nth-child(2){
     clip-path: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    shape-outside: polygon(10% 0%, 100% 0%, 100% 100%, 0% 100%);
+    min-width: 50vw;
+    flex-direction: column;
 }
 
 .mainText{
@@ -39,4 +44,21 @@
 }
 .mainSubtitle{
     font-size: 2vw;
+}
+
+.mainRightElement{
+    width: 100%;
+    flex-grow: 1;
+    padding: 10% 0% 0% 10%;
+}
+.mainInputText{
+    text-align: left;
+    color: black;
+    font-size: black;
+    font-family: arial;
+}
+.mainInputBox{
+    width: 80%;
+    height: 3vh;
+    border-radius: 10%;
 }
